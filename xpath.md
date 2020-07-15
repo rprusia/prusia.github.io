@@ -1,3 +1,41 @@
+
+# What is XPATH
+XPath uses path expressions to select nodes or node-sets in an XML document.
+
+These path expressions look very much like the path expressions you use with traditional computer file systems
+
+# Nodes
+In XPath, there are seven kinds of nodes: element, attribute, text, namespace, processing-instruction, comment, and document nodes.
+
+```
+<bookstore>
+  <book>
+    <title lang="en">Crime and Punishment</title>
+    <author>Fyodor Dostoyevsky</author>
+    <year>1866</year>
+    <price>19.99</price>
+  </book>
+</bookstore>
+```
+
+### Relationship of Nodes
+* Parent Nodes: Each element and attribute has one parent.
+* Chidren Nodes:  Element nodes may have zero, one or more children.
+* Sibling Nodes:  nodes that have the same parent are siblings
+* Ancestors:   **Title** has ancestors of **book** and **bookstore**
+```
+   <bookstore>
+     <book>
+       <title lang="en">Crime and Punishment</title>
+       <author>Fyodor Dostoyevsky</author>
+       <year>1866</year>
+       <price>19.99</price>
+     </book>
+   </bookstore>
+
+   ```
+
+
 #Xpath Examples:
 
 	/  root
