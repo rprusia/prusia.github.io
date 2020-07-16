@@ -2,14 +2,6 @@
 
 This web page contains information related to test automation and perfomance testing.
 
-
 ## Selenium
  1. <a href="https://rprusia.github.io/prusia.github.io/xpath.md">XPATH Notes</a>
  
- ### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rprusia/prusia.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
