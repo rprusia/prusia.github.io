@@ -128,46 +128,67 @@ These path expressions look very much like the path expressions you use with tra
     <b>Example:</b>  /html/body/div[2]/div[1]/div/h4[1]/b/html[1]/body[1]/div[2]/div[1]/div[1]/h4[1]/b[1]
 </p>
 
-### Find by TEXT value
-* //a[text()='Features']
-* //a[contains(text(),'Features']
-* //button[contains(text(),'Sign up')]
+<h1>Find by TEXT value</h1>
 
-### Finds button using conditional *AND*
-* //button[@type='button' and @class='btn']
+    <ul>
+        <li>//a[text()='Features']</li>
+        <li>//a[contains(text(),'Features']</li>
+        <li>//button[contains(text(),'Sign up')]</li>
+    </ul>
 
-### Finds input by attribute using @
-* //input[@lightning-input_input='search']
-
-### Find using contains
-* //a[contains(text(),'AccountContactRelations/view')]
-* //span[contains(text(),'Related Contacts')]
-* //a[contains(text(),'/related/AccountContactRelations/view')]
+<h1>Finds button using conditional *AND*</h1>
+    <ul>
+        <li>//button[@type='button' and @class='btn']</li>
+    </ul>
 
 
-### Starts-with
-The following will locate id using substring starts-with:
-* id = test-343
-* id = test-494
-* Example:   //input[starts-with(@id,'test_')]
-
-### Ends-with
-The following will locate id using substring ends-with:
-* id = 12230_test-t
-* id = 13_test-t
-* //input[ends-with(@id,'_test_')]
+<h1>Finds input by attribute using @</h1>
+    <ul>
+        <li>//input[@lightning-input_input='search']</li>
+    </ul>
 
 
-### How to find number of a particular element on page
-```
-List <WebElement> linklist = driver.findElements(By.tagName(“a”));
-    System.out.println(linklist.size)  // print number of anchors <a>
+<h1>Find using contains</h1>
+    <ul>
+        <li>//a[contains(text(),'AccountContactRelations/view')]</li>
+        <li>//span[contains(text(),'Related Contacts')]</li>
+        <li>//a[contains(text(),'/related/AccountContactRelations/view')]</li>
+    </ul>
 
-        for (int i= 0 ; I < linklist.size; i++ )
-        {
-        String linkText = linklist.get(i).getText();
-        System.out.println(linkText)  // print out text of each link.
-        }
-        ```
+
+<h1>Starts-with</h1>
+<p>The following will locate id using substring starts-with:</p>
+    <ul>
+        <li>id = test-343</li>
+        <li>id = test-494</li>
+        <li>Example:   //input[starts-with(@id,'test_')]</li>
+    </ul>
+
+
+<h1>Ends-with</h1>
+<p>The following will locate id using substring ends-with:</p>
+    <ul>
+        <li>id = 12230_test-t</li>
+        <li>id = 13_test-t</li>
+        <li>Example:   //input[ends-with(@id,'_test_')]</li>
+    </ul>
+
+
+<h1>How to find number the number of times a particular element appears on a page</h1>
+
+    <!-- <textarea rows="10" cols="80" style="border:none;">  -->
+
+    <pre>
+        <code>
+            List &lt;WebElement&gt; linklist = driver.findElements(By.tagName(“a”));
+            System.out.println(linklist.size)  // print number of anchors @&lt;a&gt;
+
+            for (int i= 0 ; I < linklist.size; i++ ) {
+                String linkText = linklist.get(i).getText();
+                System.out.println(linkText)  // print out text of each link.
+            }
+        </code>
+    </pre>
+
 
 </body>
