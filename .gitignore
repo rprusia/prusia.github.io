@@ -1,0 +1,44 @@
+# ignored folders
+
+#intellij
+# User-specific stuff:
+/.idea
+*.iml
+*.eml
+
+#eclipse
+.classpath
+.project
+/.settings
+
+#maven
+/.target
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+
+# Package Files #
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# ignore files #
+/runner.java
+
+#Output Files
+/.test-output
+
+
+**/target/
+**/Screenshots/
+/bin/
+
+**/TestReport.txt
+**/statsTest.html
+
