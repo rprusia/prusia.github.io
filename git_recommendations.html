@@ -46,9 +46,20 @@ layout: default
                 <li>Depending on your rights you may be able to push directly to master branch, but the best practice is
                     to push to branch other than master</li>
                 <li>Then verify your changes and then create pull request so your code can be reviewed before merging
-                    to master.</li></ul>
+                    to master.</li>
+                <li>Only Commit changes you want staged for the PUSH.  Make sure you are adding meaningful commit messages,
+                    because commit messages are stored as history.  At times we may need the commit messages when
+                    trying to determine issues caused by certain commits.  Other developers will get your commit
+                    messages when they pull code from master,  so meaningful Commit messages are very important.</li>
+                <li>Before doing a Push it is a good idea to pull the latest code from master.  When doing a pull git will
+                    merge master into your local branch, it will also let you know if you have any merge conflicts
+                    that need to be resolved.  It will allow you to merge those conflicts, before you push the code.</li>
+                <li>After doing a pull your code is up to date, and you can proceed to PUSH your code and then create Pull Request.</li>
+                <li>Doing the above will help avoid conflicts with your pull request.</li>
+            </ul>
 
-            </li>
+
+        </li>
     </ul>
 
 
